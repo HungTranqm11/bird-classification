@@ -47,13 +47,59 @@ I use pretrain mobienetv2 on imagenet competion with 1000 classes
 #### Freezing all mobienetv2 layers, only train on last classifier layer
 
 
-<img src="https://user-images.githubusercontent.com/85773711/135242463-0161722c-48f7-4ba3-9c92-e68c9980bd2c.png" width="300" align="center"/>
+<!-- <img src="https://user-images.githubusercontent.com/85773711/135242463-0161722c-48f7-4ba3-9c92-e68c9980bd2c.png" width="300" align="center"/> -->
+```
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input_8 (InputLayer)         [(None, 224, 224, 3)]     0         
+_________________________________________________________________
+sequential_1 (Sequential)    (None, 224, 224, 3)       0         
+_________________________________________________________________
+tf.math.truediv_3 (TFOpLambd (None, 224, 224, 3)       0         
+_________________________________________________________________
+tf.math.subtract_3 (TFOpLamb (None, 224, 224, 3)       0         
+_________________________________________________________________
+mobilenetv2_1.00_224 (Functi (None, 7, 7, 1280)        2257984   
+_________________________________________________________________
+global_average_pooling2d (Gl (None, 1280)              0         
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 1280)              0         
+_________________________________________________________________
+dense_3 (Dense)              (None, 300)               384300    
+=================================================================
+Total params: 2,642,284
+Trainable params: 384,300
+Non-trainable params: 2,257,984
+```
 <img src="https://user-images.githubusercontent.com/85773711/135242855-6ccbb98d-ab3f-4ca0-9696-6ae9c34b2629.png" width="300" align="center"/>
 
 #### Fune tuning on mobienetv2
 In this approach, I unfreeze some top layers and fine tune model 
 
-<img src="https://user-images.githubusercontent.com/85773711/135243776-6ca29053-9a45-4eaa-9a8e-46e9e0b4aedc.png" width="300" align="center"/>
+<!-- <img src="https://user-images.githubusercontent.com/85773711/135243776-6ca29053-9a45-4eaa-9a8e-46e9e0b4aedc.png" width="300" align="center"/> -->
+```
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input_8 (InputLayer)         [(None, 224, 224, 3)]     0         
+_________________________________________________________________
+sequential_1 (Sequential)    (None, 224, 224, 3)       0         
+_________________________________________________________________
+tf.math.truediv_3 (TFOpLambd (None, 224, 224, 3)       0         
+_________________________________________________________________
+tf.math.subtract_3 (TFOpLamb (None, 224, 224, 3)       0         
+_________________________________________________________________
+mobilenetv2_1.00_224 (Functi (None, 7, 7, 1280)        2257984   
+_________________________________________________________________
+global_average_pooling2d (Gl (None, 1280)              0         
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 1280)              0         
+_________________________________________________________________
+dense_3 (Dense)              (None, 300)               384300    
+=================================================================
+Total params: 2,642,284
+Trainable params: 2,245,740
+Non-trainable params: 396,544
+```
 <img src="https://user-images.githubusercontent.com/85773711/135243826-a23e05fe-7d01-46c1-ae94-48dbc2a5b184.png" width="300" align="center"/>
 
 After fine tunning, model have  ... accuracy and ... f1 score on test set
