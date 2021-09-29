@@ -38,7 +38,6 @@ dense_5 (Dense)              (None, 300)               307500
 Total params: 64,015,212
 Trainable params: 64,015,212
 Non-trainable params: 0
-_________________________________________________________________
 ```
 
 In this approach, base model have ... accuracy and ... f1 score on test set
