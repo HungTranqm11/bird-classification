@@ -1,7 +1,7 @@
 # Bird classification
 
-. Task: Birds Classification
-. Dataset: 
+- Task: Birds Classification.
+- Dataset: 
   + Training set: 43622 images belonging to 300 classes.
   + Validation set: 1500 images belonging to 300 classes.
   + Test set: 1500 images belonging to 300 classes.
