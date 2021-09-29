@@ -7,4 +7,4 @@
   + Test set: 1500 images belonging to 300 classes.
   + You can download dataset here: https://www.kaggle.com/gpiosenka/100-bird-species/code
 
-![image](https://user-images.githubusercontent.com/85773711/135237348-5953c238-21e9-4979-a792-efa39c194790.png)
+![image](https://user-images.githubusercontent.com/85773711/135237477-04f35a76-3f97-4acf-a1d8-8cb297ca9039.png)0.png)
