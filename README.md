@@ -14,7 +14,7 @@
 I implement a simple CNN model
 
 <!-- <img src="https://user-images.githubusercontent.com/85773711/135238981-b7e6b363-32ed-4152-8434-fb03d1f5d530.png" width="300" align="center"/> -->
-_________________________________________________________________
+```
 Layer (type)                 Output Shape              Param #   
 =================================================================
 conv2d_6 (Conv2D)            (None, 214, 214, 32)      11648     
@@ -39,6 +39,7 @@ Total params: 64,015,212
 Trainable params: 64,015,212
 Non-trainable params: 0
 _________________________________________________________________
+```
 
 In this approach, base model have ... accuracy and ... f1 score on test set
 ### MobienetV2
