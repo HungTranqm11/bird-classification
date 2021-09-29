@@ -71,7 +71,7 @@ Total params: 2,642,284
 Trainable params: 384,300
 Non-trainable params: 2,257,984
 ```
-<img src="https://user-images.githubusercontent.com/85773711/135242855-6ccbb98d-ab3f-4ca0-9696-6ae9c34b2629.png" width="300" align="center"/>
+<img src="https://user-images.githubusercontent.com/85773711/135242855-6ccbb98d-ab3f-4ca0-9696-6ae9c34b2629.png" width="450" align="center"/>
 
 #### Fune tuning on mobienetv2
 In this approach, I unfreeze some top layers and fine tune model 
@@ -100,6 +100,6 @@ Total params: 2,642,284
 Trainable params: 2,245,740
 Non-trainable params: 396,544
 ```
-<img src="https://user-images.githubusercontent.com/85773711/135243826-a23e05fe-7d01-46c1-ae94-48dbc2a5b184.png" width="300" align="center"/>
+<img src="https://user-images.githubusercontent.com/85773711/135243826-a23e05fe-7d01-46c1-ae94-48dbc2a5b184.png" width="450" align="center"/>
 
 After fine tunning, model have  ... accuracy and ... f1 score on test set
