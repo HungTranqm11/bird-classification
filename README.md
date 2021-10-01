@@ -1,4 +1,5 @@
 # Bird classification
+## Technical: Keras, Tensorflow, Mobienetv2, CNN
 ## Task Description
 - Task: Birds Classification.
 - Dataset: 
